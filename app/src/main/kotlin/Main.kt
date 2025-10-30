@@ -1,35 +1,10 @@
- data class Hamster(
-    val id: Int,
-    val name: String,
-    val age: Int,
-    val weight: Float,
-    val breed: String
-)
 
-
-class HamsterManager(){
-
-
-fun addHamster(): Hamster {
-    println("Add a new hamster...")
-    print("id: "); val id = readln().toInt()
-    print("name: "); val name = readln()
-    print("age: "); val age = readln().toInt()
-    print("weight: "); val weight = readln().toFloat()
-    print("breed: "); val breed = readln()
-
-    return Hamster(id = id, name = name, age = age, weight = weight, breed = breed)
-}
-
-
-
-}
 fun main(){
     println("=======================================")
     println("    HAMSTER FOOD DISPENSER SYSTEM")
     println("=======================================")
 
-   
+     val manager=HamsterManager()
     var menu= arrayOf("1. Managae Hamster","2. Manage Food Inventory","3. Feeding Operations","4. Reports","0. Exit")
     println(menu[0])
     println(menu[1])
@@ -42,6 +17,7 @@ fun main(){
 
     if (choice == 1) {
         println("You choose: "+menu[0])
+          manager.addHamster()
     } else if(choice==2){
          println("You choose: "+menu[1])
     }
@@ -53,8 +29,8 @@ fun main(){
          println("You choose: "+menu[4])
     }
 
-   val manager=HamsterManager()
- manager.addHamster()
+ 
+ 
 
    
 }
