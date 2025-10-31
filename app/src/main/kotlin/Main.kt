@@ -1,8 +1,10 @@
-
+import utils.Components
 fun main(){
-    println("=======================================")
-    println("    HAMSTER FOOD DISPENSER SYSTEM")
-    println("=======================================")
+     val bannerComponent=Components()
+
+    bannerComponent.banner()
+    println("HAMSTER FOOD DISPENSER SYSTEM")
+    bannerComponent.banner()
 
      val manager=HamsterManager()
     var menu= arrayOf("1. Managae Hamster","2. Manage Food Inventory","3. Feeding Operations","4. Reports","0. Exit")
