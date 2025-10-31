@@ -8,11 +8,9 @@ fun main(){
 
      val manager=HamsterManager()
     var menu= arrayOf("1. Managae Hamster","2. Manage Food Inventory","3. Feeding Operations","4. Reports","0. Exit")
-    println(menu[0])
-    println(menu[1])
-    println(menu[2])
-    println(menu[3])
-    println(menu[4])
+    for(x in menu){
+     println(x)
+    }
     
     print("Enter choice: ")
     val choice = readln().toInt()
