@@ -16,17 +16,17 @@ fun main(){
     val choice = readln().toInt()
 
     if (choice == 1) {
-        println("You choose: "+menu[0])
+        println("You choose: "+ menu[0])
           manager.addHamster()
     } else if(choice==2){
-         println("You choose: "+menu[1])
+         println("You choose: "+ menu[1])
     }
     else if(choice==3){
-         println("You choose: "+menu[2])
+         println("You choose: "+ menu[2])
     }else if(choice==3){
-         println("You choose: "+menu[3])
+         println("You choose: "+ menu[3])
     }else if(choice==4){
-         println("You choose: "+menu[4])
+         println("You choose: "+ menu[4])
     }
 
  
