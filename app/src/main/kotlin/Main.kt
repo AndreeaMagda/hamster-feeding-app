@@ -1,4 +1,5 @@
 import utils.Components
+
 fun main(){
      val bannerComponent=Components()
 
@@ -7,7 +8,12 @@ fun main(){
     bannerComponent.banner()
 
      val manager=HamsterManager()
-    var menu= arrayOf("1. Managae Hamster","2. Manage Food Inventory","3. Feeding Operations","4. Reports","0. Exit")
+    var menu= arrayOf(   "1. Managae Hamster",
+                         "2. Manage Food Inventory",
+                         "3. Feeding Operations",
+                         "4. Reports",
+                         "5. Delete hamster",
+                         "0. Exit")
     for(x in menu){
      println(x)
     }
@@ -20,13 +26,14 @@ fun main(){
           manager.addHamster()
     } else if(choice==2){
          println("You choose: "+ menu[1])
-    }
-    else if(choice==3){
+    } else if(choice==3){
          println("You choose: "+ menu[2])
-    }else if(choice==3){
-         println("You choose: "+ menu[3])
-    }else if(choice==4){
+    } else if(choice==3){
          println("You choose: "+ menu[4])
+          manager.deleteHamsterById()
+          
+    }else if(choice==5){
+         println("You choose: "+ menu[5])
     }
 
  
